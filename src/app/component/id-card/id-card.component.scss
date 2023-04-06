@@ -1,0 +1,175 @@
+body {
+    background-color: #d7d6d3;
+    font-family: 'verdana';
+}
+
+.triangle1 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    // outline: 0.5rem solid rgb(240, 229, 128);
+    // outline-offset: 0.5rem;
+    // width: 300px;
+    // padding: 4px;  
+    margin: 50px auto;
+    border-radius: 5px;
+}
+
+.top-left1 {
+    border-top: 150px solid orange;
+    border-right: 150px solid transparent;
+    position: absolute;
+    top: 0%;
+    left: 38%;
+}
+
+.bottom-right1 {
+    border-bottom: 150px solid orange;
+    border-left: 150px solid transparent;
+    margin-left: 10px;
+    position: absolute;
+    right: 38%;
+    bottom: 0%;
+}
+
+.id-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    outline: 0.5rem solid gold;
+    outline-offset: 0.5rem;
+    width: 400px;
+    height: 600px;
+}
+
+.line {
+    border-top: 1px solid rgb(77, 63, 28);
+}
+.hr-line{
+    margin-bottom: 10px;
+}
+// .id-card-holder {
+//     width: 300px;
+//     padding: 4px;
+//     margin: 100px auto;
+//     background-color: #1f1f1f;
+//     border-radius: 5px;
+//     position: relative;
+// }
+// .id-card-holder {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .id-card-holder:after {
+//     content: '';
+//     width: 7px;
+//     display: block;
+//     background-color: #0a0a0a;
+//     height: 100px;
+//     position: absolute;
+//     top: 135px;
+//     border-radius: 0 5px 5px 0;
+// }
+
+// .id-card-holder:before {
+//     content: '';
+//     width: 7px;
+//     display: block;
+//     background-color: #0a0a0a;
+//     height: 100px;
+//     position: absolute;
+//     top: 135px;
+//     left: 297px;
+//     border-radius: 5px 0 0 5px;
+// }
+
+// .id-card {
+//     background-color: #fff;
+//     padding: 10px;
+//     width: 280px;
+//     height: 550px;
+//     border-radius: 10px;
+//     text-align: center;
+//     box-shadow: 0 0 1.5px 0px #b9b9b9;
+//     position: absolute;
+//     left: 1%;
+//     top: 1%;
+// }
+
+.id-card img {
+    margin: 0 auto;
+}
+
+.header img {
+    width: 150px;
+    margin-top: -50px;
+}
+
+.photo img {
+    width: 100px;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 15px;
+    margin: 3px 0;
+}
+
+@media print {
+    .top-left1 {
+        left: 22%;
+    }
+
+    .bottom-right1 {
+        right: 22%;
+    }
+}
+
+h3 {
+    font-size: 15px;
+    margin: 2.5px 0;
+    font-weight: 300;
+}
+
+.qr-code img {
+    width: 140px;
+    height: 40px;
+}
+
+p {
+    font-size: 12px;
+    margin: 2px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-top: -38%;
+    width: 300px;
+}
+
+// .cards {
+//     display: flex;
+//     gap: 20px;
+//     width: 500px;
+// }
+
+@media print {
+    .input {
+        display: none !important;
+    }
+
+    .printBtn1 {
+        display: none !important;
+    }
+}
